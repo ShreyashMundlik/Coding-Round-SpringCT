@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 5px;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        footer h4{
+            justify-content: center;
+            font-family: cursive;
+            display: flex;
+        }
+        .atag{
+            font-family: monospace;
+            padding: 5px;
+        }
+        @media (max-width:500px) {
+            .container-fluid{
+                    flex-direction: column;
+                }   
+        }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header class="bg-success" id="header"><h2>Web Application</h2></header>
+
+        <div class="container">
+            <h3>Navigarion Bar</h3>
+            <ul>
+                <li><a class="atag" href="/add.html">ADD</a></li>
+                <li><a class="atag" href="/view.html">VIEW</a></li>
+            </ul>
+        </div>
+
+       <footer>
+        <h4>UserInterface Footer</h4>
+       </footer>
+
+    </div>
+  </body>
+</html>
